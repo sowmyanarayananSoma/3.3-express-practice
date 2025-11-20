@@ -1,6 +1,6 @@
 document.getElementById('fetchButton').addEventListener('click', function() {
     alert("Fetching random user data from backend!")
-    fetch('http://localhost:3000/users')
+    fetch('http://localhost:3005/users')
         .then(response => response.json())
         .then(data => {
             document.getElementById('userName').textContent = `${data.name.title} ${data.name.first} ${data.name.last}`;
